@@ -6,11 +6,11 @@
 
 :root {
     --bg-color: #181823;
-    --theme-color: #537FE7;
-    --theme-light: #C0EEF2;
-    --theme-dark: #0C356A;
-    --theme-darker: #051523;
-    --text-color: #E9F8F9;
+    --theme-color: #e36881;
+    --theme-light: #f2c0cc;
+    --theme-dark: #871735;
+    --theme-darker: #350712;
+    --text-color: #ffdfe9;
 }
 
 html {
@@ -21,11 +21,11 @@ html {
 
 .mesh-gradient {
     background:
-        radial-gradient(circle at 10% 10%, var(--theme-color), var(--theme-darker) 50%),
+        radial-gradient(circle at 10% 10%, var(--theme-color), var(--theme-dark) 50%),
         radial-gradient(circle at 80% 80%, var(--theme-dark), var(--theme-color) 50%),
-        radial-gradient(circle at 50% 30%, var(--theme-color), var(--theme-darker) 50%),
+        radial-gradient(circle at 50% 30%, var(--theme-color), var(--theme-dark) 50%),
         radial-gradient(circle at 70% 60%, var(--theme-darker), var(--theme-color) 60%);
-    background-size: 150% 150%;
+    background-size: 400% 400%;
     background-repeat: no-repeat;
     animation: gradientAnimation 15s ease infinite;
 }
@@ -34,9 +34,11 @@ html {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -102,7 +104,7 @@ section {
 
 #front {
     font-size: 10rem;
-    font-family: Danfo;
+    font-family: Montserrat;
 }
 
 .front-head h1 {
@@ -118,38 +120,13 @@ section {
 
 /* @keyframes typing {
     0.0000%, 27.3488% { content: ""; }
-    1.1395%, 26.2093% { content: "p"; }
-    2.2791%, 25.0698% { content: "po"; }
-    3.4186%, 23.9302% { content: "por"; }
-    4.5581%, 22.7907% { content: "port"; }
-    5.6977%, 21.6512% { content: "portf"; }
-    6.8372%, 20.5116% { content: "portfo"; }
-    7.9767%, 19.3721% { content: "portfol"; }
-    9.1163%, 18.2326% { content: "portfoli"; }
-    10.2558%, 17.0930% { content: "portfolio"; }
-
-    30.7674%, 51.2791% { content: ""; }
-    31.9070%, 50.1395% { content: "p"; }
-    33.0465%, 49.0000% { content: "po"; }
-    34.1860%, 47.8605% { content: "por"; }
-    35.3256%, 46.7209% { content: "port"; }
-    36.4651%, 45.5814% { content: "portf"; }
-    37.6047%, 44.4419% { content: "portfo"; }
-    38.7442%, 43.3023% { content: "portfol"; }
-    39.8837%, 42.1628% { content: "portfoli"; }
-    41.0233%, 41.0233% { content: "portfolio"; }
-  } */
-
-
-  /* @keyframes typing {
-    0.0000%, 27.3488% { content: ""; }
-    1.1395%, 26.2093% { content: "p"; }
-    2.2791%, 25.0698% { content: "po"; }
-    3.4186%, 23.9302% { content: "por"; }
-    4.5581%, 22.7907% { content: "port"; }
-    5.6977%, 21.6512% { content: "portf"; }
-    6.8372%, 20.5116% { content: "portfo"; }
-    7.9767%, 19.3721% { content: "portfol"; }
+    1.1395%, 26.2093% { content: "P"; }
+    2.2791%, 25.0698% { content: "Po"; }
+    3.4186%, 23.9302% { content: "Por"; }
+    4.5581%, 22.7907% { content: "Port"; }
+    5.6977%, 21.6512% { content: "Portf"; }
+    6.8372%, 20.5116% { content: "Portfo"; }
+    7.9767%, 19.3721% { content: "ortfol"; }
     9.1163%, 18.2326% { content: "portfoli"; }
     10.2558%, 17.0930% { content: "portfolio"; }
     30.7674%, 51.2791% { content: ""; }
@@ -174,79 +151,180 @@ section {
     84.3256%, 91.1628% { content: "portfolio"; }
   } */
 
-  @keyframes typing {
-    0%, 27% { content: ""; }
-    5%, 26% { content: "p"; }
-    10%, 25% { content: "po"; }
-    15%, 24% { content: "por"; }
-    20%, 23% { content: "port"; }
-    25%, 22% { content: "portf"; }
-    30%, 21% { content: "portfo"; }
-    35%, 20% { content: "portfol"; }
-    40%, 19% { content: "portfoli"; }
-    45%, 18% { content: "portfolio"; }
+@keyframes typing {
 
-    50%, 75% { content: ""; }
-    55%, 70% { content: "p"; }
-    60%, 65% { content: "po"; }
-    65%, 60% { content: "por"; }
-    70%, 55% { content: "port"; }
-    75%, 50% { content: "portf"; }
-    80%, 45% { content: "portfo"; }
-    85%, 40% { content: "portfol"; }
-    90%, 35% { content: "portfoli"; }
-    95%, 30% { content: "portfolio"; }
+    0%,
+    27% {
+        content: "";
+    }
 
-    100% { content: ""; }
+    5%,
+    26% {
+        content: "P";
+    }
+
+    10%,
+    25% {
+        content: "Po";
+    }
+
+    15%,
+    24% {
+        content: "Por";
+    }
+
+    20%,
+    23% {
+        content: "Port";
+    }
+
+    25%,
+    22% {
+        content: "Portf";
+    }
+
+    30%,
+    21% {
+        content: "Portfo";
+    }
+
+    35%,
+    20% {
+        content: "Portfol";
+    }
+
+    40%,
+    19% {
+        content: "Portfoli";
+    }
+
+    45%,
+    18% {
+        content: "Portfolio";
+    }
+
+    50%,
+    75% {
+        content: "";
+    }
+
+    55%,
+    70% {
+        content: "P";
+    }
+
+    60%,
+    65% {
+        content: "Po";
+    }
+
+    65%,
+    60% {
+        content: "Por";
+    }
+
+    70%,
+    55% {
+        content: "Port";
+    }
+
+    75%,
+    50% {
+        content: "Portf";
+    }
+
+    80%,
+    45% {
+        content: "Portfo";
+    }
+
+    85%,
+    40% {
+        content: "Portfol";
+    }
+
+    90%,
+    35% {
+        content: "Portfoli";
+    }
+
+    95%,
+    30% {
+        content: "Portfolio";
+    }
+
+    100% {
+        content: "";
+    }
 }
 
 
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
+@keyframes blink {
 
-  .typewriter {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter {
     --caret: currentcolor;
-  }
+}
 
-  .typewriter::before {
+.typewriter::before {
     content: "";
     animation: typing 13.5s infinite;
-  }
+}
 
-  .typewriter::after {
+.typewriter::after {
     content: "";
     border-right: 1px solid var(--caret);
     animation: blink 0.5s linear infinite;
-  }
+}
 
-  .typewriter.thick::after {
+.typewriter.thick::after {
     border-right: 1ch solid var(--caret);
-  }
+}
 
-  .typewriter.nocaret::after {
+.typewriter.nocaret::after {
     border-right: 0;
-  }
+}
 
 
-  @media (prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
     .typewriter::after {
-      animation: none;
+        animation: none;
     }
 
     @keyframes sequencePopup {
-      0%, 100% { content: "developer"; }
-      25% { content: "writer"; }
-      50% { content: "reader"; }
-      75% { content: "human"; }
+
+        0%,
+        100% {
+            content: "developer";
+        }
+
+        25% {
+            content: "writer";
+        }
+
+        50% {
+            content: "reader";
+        }
+
+        75% {
+            content: "human";
+        }
     }
 
     .typewriter::before {
-      content: "developer";
-      animation: sequencePopup 12s linear infinite;
+        content: "developer";
+        animation: sequencePopup 12s linear infinite;
     }
-  }
+}
 
 .front-design a {
     padding: 10px 20px;
@@ -271,7 +349,7 @@ section {
 
 
 .about-head {
-    font-family: Danfo;
+    font-family: Montserrat;
     font-size: 6rem;
     padding: 1rem;
     transition: all 0.3s ease;
@@ -284,31 +362,70 @@ section {
     /* height: 60vh; */
 }
 
-
 .social-head {
-    font-family: Danfo;
+    font-family: Montserrat;
     font-size: 6rem;
     padding: 2rem 1rem;
     transition: all 0.3s ease;
 }
 
-.socials a {
-    padding: 3rem 2.5rem;
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Centers the columns within the screen */
+    align-items: center;
+    /* Aligns items vertically centered */
+    gap: 15rem;
+    /* Space between the two columns */
+    margin: 0 auto;
     transition: all 0.3s ease;
 }
 
-img {
-    z-index: -1;
-    -webkit-filter: invert(1);
-    filter: invert(1);
+.social-col1,
+.social-col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-left: 6rem;
 }
 
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.sname {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 10rem;
+    margin: 1rem;
+    color: var(--text-color);
+}
+
+.social-item a {
+    text-decoration: none;
+    margin-right: 3rem;
+    transition: all 0.3s ease;
+}
+
+.socials img {
+    filter: invert(1);
+    height: 40px;
+}
+
+
+
 #projects {
-    height:100vh;
+    height: 100vh;
 }
 
 .project-head {
-    font-family: Danfo;
+    font-family: Montserrat;
     font-size: 6rem;
     padding: 2rem 1rem;
     transition: all 0.3s ease;
@@ -326,7 +443,7 @@ img {
 }
 
 .contact-head {
-    font-family: Danfo;
+    font-family: Montserrat;
     font-size: 6rem;
     padding: 2rem 1rem;
     transition: all 0.3s ease;
@@ -351,43 +468,57 @@ img {
 
 .contact-form form input,
 textarea {
-    background-color: aliceblue;
     font-size: 1rem;
     padding: 0.8rem;
     margin: 1rem;
-    border-radius: 15px;
+    border-radius: 2rem;
     border: none;
     outline: none;
     transition: all 0.3s ease;
+    background-color: var(--text-color);
 }
 
 .contact-form form input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
     outline: none;
-    box-shadow: 0 0 0.3rem aliceblue;
+    box-shadow: 0 0 0.3rem var(--text-color);
+}
+
+.contact-form form input::placeholder {
+    font-family: Montserrat;
 }
 
 .contact-form textarea {
+    resize: none;
     overflow: hidden;
     white-space: pre-wrap;
     word-wrap: break-word;
+    border-radius: 2rem;
+    background-color: var(--text-color);
+}
+
+.contact-form textarea::placeholder {
+    font-family: Montserrat;
 }
 
 .contact-form form label {
+    font: Montserrat;
     font-size: 1.2rem;
     align-self: center;
     transition: all 0.3s ease;
 }
 
 .form-submit {
-    background-color: aliceblue;
+    background-color: var(--text-color);
+    border: var(--theme-color);
+    border-style: solid;
+    border-width: 3px;
     color: #0e1215;
     font-size: 1.2rem;
-    padding: 0.8rem 1.7rem;
+    padding: 0.6rem 1.8rem;
     margin: 1rem;
-    border-radius: 15px;
-    border: none;
+    border-radius: 2rem;
     transition: all 0.3s ease;
 }
 
